@@ -5,8 +5,9 @@ const fs = require("fs");
 
 // Sets up the Express App
 const app = express();
-const port = process.env.port || 8080;
+const port = process.env.PORT || 8080;
 const mainDir = path.join(__dirname, "/public");
+//comment 1
 
 // Sets up the Express app to handle data parsing
 app.use(express.static("public"));
